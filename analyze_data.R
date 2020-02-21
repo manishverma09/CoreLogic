@@ -28,7 +28,7 @@ corelogic.subset = corelogic[!index,]
 index = is.na(corelogic.subset$sale.amoun)
 corelogic.subset = corelogic.subset[!index,] 
 
-# Formate date values to get the year, note that it is a numeric 
+# Format date values to get the year, note that it is a numeric 
 yr = lapply(corelogic.subset$sale.date, function (x) substr(as.character(x), 1, 4))
 corelogic.subset['year'] = as.numeric(yr)
 
@@ -56,6 +56,7 @@ dc.tracts = dc.tracts[c('GEOID')]
 dc.mean.val = st_join(corelogic.subset.latest, dc.tracts, left=TRUE)     # this is using st_intersects
 st_geometry(dc.mean.val) = NULL
 dc.mean.val.count = dc.mean.val %>% group_by(GEOID) %>% group_by(year, add=TRUE) %>% summarise('Count' = n())
+print(dc.mean.val.count)
 
 # How many tracts have more than 10 observations in a year
 
