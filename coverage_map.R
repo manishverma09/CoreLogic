@@ -1,4 +1,3 @@
-# Let us associate building footprints with the relevant data.
 library(sf)
 library(leaflet)
 library(dplyr)
@@ -12,7 +11,7 @@ library(ggplot2)
 census_api_key('Your API key goes here as a string', overwrite = FALSE, install = TRUE)
 
 
-##### Get the names of the three data files
+##### Get the names of the three data files, you will have to mount the drive from the library
 fileNames = list.files('/Volumes/corelogic/', pattern = '*_Count', full.names = TRUE)
 print(fileNames)
 summaryData = read_excel(fileNames[1])     # Change the no to 1, 2, or 3 here
