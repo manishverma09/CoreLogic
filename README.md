@@ -3,4 +3,4 @@ The University of Michigan library system has licensed a large data set containi
 
 You can use the code here to extract data for any geography you are interested in. The Python notebook extracts the data and saves it as a shapefile for later use. The R files read the shapefile, attach some information from Census, and do basic exploratory analysis. You will need a Census API key to access and download the census data. 
 
-The codes here are provided so that participants in workshop/short courses can use them along with the lectures in the class. The codes are best used along with the class room lectures/discussion.  
+The codes here are provided so that participants in the workshop can use them along with the lectures in the class. The codes are best used along with the workshop discussion, but if you might find it useful if you are trying to subset CoreLogic data.  
