@@ -12,7 +12,7 @@ projString = "+proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=37.5 +lon_0=-96 +x_0=0 +y
 census_api_key('Your API key goes here as a string', overwrite = FALSE, install = TRUE)
 
 
-### 1. Read and examine the corelogic data that we extracted using Python file extract_and_format.ipynb
+### 1. Read and examine the corelogic data that we extracted using Python file extract_and_format_1.ipynb
 corelogic = st_read('dc_prop_sale.shp')
 corelogic = st_transform(corelogic, projString)
 corelogic['apn'] = str_squish(as.character(corelogic$apn))
