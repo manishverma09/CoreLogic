@@ -3,4 +3,4 @@ The University of Michigan library system has acquired a comprehensive, nation-w
 
 You can use the code here to aggregate the data for any geography, e.g. Census Tracts or County, you are interested in. The Python notebook extracts the data and saves it as a shapefile for later use. The R files read the shapefile, attach some information from Census, and do basic exploratory analysis. You will need a Census API key to access and download the census data. 
 
-The codes here are provided so that participants in the workshop can use them along with the lectures in the class. The codes are best used along with the workshop discussion, but if you might find it useful if you are trying to subset CoreLogic data and combine it with information from Census.  
+The codes here are provided so that participants in the workshop can use them along with the lectures in the class. The codes are best used along with the workshop discussion, but you might find it useful if you are trying to subset CoreLogic data and combine it with information from Census.  
